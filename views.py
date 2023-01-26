@@ -29,3 +29,7 @@ def perform_query():
         )
 
     return jsonify(result)
+
+@main_bp.route('/ping')
+def ping():
+    return 'pong'
